@@ -1,0 +1,312 @@
+<!doctype html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="TyphonJS -- A platform for web and mobile app development including pipelines for container based deployment in the cloud.">
+   <meta name="viewport" content="width=device-width, initial-scale=0.75">
+   <title>TyphonJS &#8482;</title>
+
+
+   <!-- Defines a CSP which makes the app more secure; to even be more secure adding a hash or nonce for
+   `script-src` is recommended -->
+   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://storage.googleapis.com; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://storage.googleapis.com https://cdn-images.mailchimp.com; font-src https://fonts.gstatic.com">
+
+   <!-- Icons for web apps created by http://realfavicongenerator.net/ -->
+
+   <!-- Add to homescreen for Chrome on Android -->
+   <meta name="mobile-web-app-capable" content="yes">
+   <link rel="icon" type="image/png" href="site/images/icons/android-chrome-192x192.png" sizes="192x192" data-cdn="true">
+   <link rel="manifest" href="site/images/icons/manifest.json">
+
+   <!-- Add to homescreen for Safari on iOS -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <meta name="apple-mobile-web-app-title" content="Todos">
+   <link rel="apple-touch-icon" sizes="57x57" href="site/images/icons/apple-touch-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="site/images/icons/apple-touch-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="site/images/icons/apple-touch-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="site/images/icons/apple-touch-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="site/images/icons/apple-touch-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="site/images/icons/apple-touch-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="site/images/icons/apple-touch-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="site/images/icons/apple-touch-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="site/images/icons/apple-touch-icon-180x180.png">
+   <link rel="mask-icon" href="site/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+   <!-- Tile icon for Win 8/10 (144x144 + tile color) -->
+   <meta name="msapplication-TileColor" content="#2d89ef">
+   <meta name="msapplication-TileImage" content="site/images/icons/mstile-144x144.png">
+   <meta name="msapplication-config" content="site/images/icons/browserconfig.xml">
+   <meta name="theme-color" content="#ffffff">
+
+   <!-- Favicon icon -->
+   <link rel="shortcut icon" href="site/images/icons/favicon.ico" type="image/x-icon">
+   <link rel="icon" type="image/png" href="site/images/icons/favicon-16x16.png" sizes="16x16">
+   <link rel="icon" type="image/png" href="site/images/icons/favicon-32x32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="site/images/icons/favicon-194x194.png" sizes="194x194">
+   <link rel="icon" type="image/png" href="site/images/icons/favicon-96x96.png" sizes="96x96">
+
+   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.blue_grey-indigo.min.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+   <link rel="stylesheet" href="site/css/styles.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="site/css/landing.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="site/css/mailchimp.css" type="text/css" media="screen" />
+
+   <script src="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.min.js"></script>
+
+</head>
+
+<body>
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+   
+      <!-- HEADER -->
+      <header class="mdl-layout__header mdl-color-text--grey-50">
+         <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title"><img src="site/images/icons/android-chrome-36x36.png">&nbsp;TyphonJS&#8482;</span>
+         </div>
+      </header>
+      
+      <main class="mdl-layout__content">
+         <!-- CONTENT -->
+         <div class="mdl-grid typhon-content">
+            
+         <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col typhon-center">
+            <div class="mdl-grid typhon-grid-internal">
+                 
+               <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet typhon-center">
+                  <div class="mdl-card__title mdl-card--border">
+                     Welcome to TyphonJS!
+                  </div>
+                  <div class="mdl-card__supporting-text">
+							In short TyphonJS is a platform for modern mobile & web app development focusing not only on framework concerns, but also providing fully featured pipelines for integrated container deployment for server / database resources and web apps built on top of <a href="http://jspm.io/" target="_blank">JSPM</a> / <a href="https://github.com/systemjs/systemjs" target="_blank">SystemJS</a> including maintenance and monitoring solutions via <a href="https://coreos.com/rkt/" target="_blank">rkt</a> / <a href="http://kubernetes.io/" target="_blank">Kubernetes</a> / <a href="http://rancher.com/" target="_blank">Rancher</a> facilitated by a standalone configuration / management app currently in development. In addition for Javascript web apps integrated deployment options to convert them to desktop apps via <a href="http://electron.atom.io/" target="_blank">Electron</a> is available now and <a href="https://cordova.apache.org/" target="_blank">Cordova</a> for direct mobile deployment is forthcoming. 
+                     <br><br>
+							TyphonJS provides a modernized version of Backbone / <a href="https://github.com/typhonjs-backbone/backbone-es6" target="_blank">backbone-es6</a> and related extensions for <a href="https://parse.com/" target="_blank">Parse</a> (<a href="https://github.com/typhonjs-backbone-parse/backbone-parse-es6" target="_blank">backbone-parse-es6</a>), <a href="https://www.firebase.com/" target="_blank">Firebase</a> (forthcoming), <a href="https://www.meteor.com/" target="_blank">Meteor</a> (halfway there) and <a href="http://www.socketstream.org/" target="_blank">SocketStream</a> (forthcoming). In addition a forthcoming complete data / event driven component library built on top of <a href="https://getmdl.io/" target="_blank">Material Design Lite</a> for backbone-es6 web apps is provided. However, the larger toolchain is applicable to any web app framework that can leverage JSPM / SystemJS. 
+                     <br><br>
+							For native mobile apps TyphonJS provides a pipeline for container based deployment of server / database backends for cloud hosted solutions primarily Parse, Meteor and SocketStream. 
+                     <br><br>
+							TyphonJS is a multi-organization / repo effort being open sourced under the <a href="https://www.mozilla.org/en-US/MPL/" target="_blank">MPLv2.0 license</a>. A multi org / repo toolchain is currently in development to support TyphonJS and beyond. This approach allows various modules / components of TyphonJS to be mixed and matched more easily with the web app framework of your choice amongst other scenarios. In many ways TyphonJS provides the glue between various important open source development / deployment tooling along with providing additional first party components. All first party Javascript source code is fully documented and is modern ES6 written in a standard idiomatic style. 
+                     <br><br>
+							Please bear with us while the tooling and various framework integrations are completed. Full documentation and testing resources are already provided in most repos and a universal automated documentation repo / web site will be available soon. ETA of an official public launch with complete tutorials and documentation is Q3 '16. 
+                     <br><br>
+							This current web site simply documents ongoing TyphonJS development and early access resources available now and is purely informational at this time.
+                     <br><br>
+                     Join our low volume announcement list below to be notified of major ongoing progress and the 1.0 launch of TyphonJS:
+                     <div id="mc_embed_signup">
+                        <form action="//typhonjs.us13.list-manage.com/subscribe/post?u=e4b3d685a0a43a7c50ef309fe&amp;id=581cd53f73" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                           <div id="mc_embed_signup_scroll">
+                              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                              <div style="position: absolute; left: -5000px;"><input type="text" name="b_e4b3d685a0a43a7c50ef309fe_581cd53f73" tabindex="-1" value=""></div>
+                              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                           </div>
+                        </form>
+                     </div>
+
+                  </div>
+               </div>
+         
+               <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet typhon-center">
+                  <div class="mdl-card__title mdl-card--border">
+                     Current status / progress
+                  </div>
+                  <div class="mdl-card__supporting-text">
+							The following tasks are next up for completion:
+							<br>
+							<li><a href="https://github.com/typhonjs-backbone/backbone-es6" target="_blank">backbone-es6</a>: update to 1.3.3 / Backbone parity.</li>
+							<li><a href="https://github.com/typhonjs-backbone/backbone-es6" target="_blank">backbone-es6</a>: completely modularize backbone-es6 into separate repos.</li>
+							<li><a href="https://github.com/typhonjs-node-esdoc" target="_blank">typhonjs-node-esdoc</a>: finish all ESDoc plugins including D3 interactive graphs of JSPM / NPM managed source & package (<a href="https://docs.typhonjs.io/typhonjs-demos/backbone-parse-es6-todos-improved/graphs/jspm_packages.html" target="_blank">JSPM package demo</a>).</li>
+							<li><a href="https://github.com/typhonjs-node-esdoc" target="_blank">typhonjs-node-esdoc</a>: complete multi-org / repo automatic ESDoc documentation generation via Travis CI.</li>
+   					</div>
+					</div>
+
+               <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet typhon-center">
+                  <div class="mdl-card__title mdl-card--border">
+                     Canonical demos
+                  </div>
+                  <div class="mdl-card__supporting-text">
+							The recommended ES6 / JSPM / SystemJS demo web apps are below (<a href="http://www.howtogeek.com/196087/how-to-add-websites-to-the-home-screen-on-any-smartphone-or-tablet/" target="_blank">installable as Android home screen apps!</a>):
+							<br>
+							<li><a href="https://github.com/typhonjs-demos/backbone-es6-localstorage-todos/" target="_blank">backbone-es6-localstorage-todos</a> / <a href="https://demos.typhonjs.io/typhonjs-demos/backbone-es6-localstorage-todos/" target="_blank">demo</a> / <a href="https://docs.typhonjs.io/typhonjs-demos/backbone-es6-localstorage-todos/" target="_blank">docs</a> - Provides the canonical TODOs demo for <a href="https://github.com/typhonjs-backbone/backbone-es6" target="_blank">backbone-es6</a> using <a href="https://github.com/typhonjs-backbone/typhonjs-core-backbone-localstorage" target="_blank">typhonjs-core-backbone-localstorage</a></li>
+							<li><a href="https://github.com/typhonjs-demos/backbone-parse-es6-todos/" target="_blank">backbone-parse-es6-todos</a> / <a href="https://demos.typhonjs.io/typhonjs-demos/backbone-parse-es6-todos/" target="_blank">demo</a> / <a href="https://docs.typhonjs.io/typhonjs-demos/backbone-parse-es6-todos/" target="_blank">docs</a> - Provides the canonical TODOs demo for <a href="https://github.com/typhonjs-backbone-parse/backbone-parse-es6" target="_blank">backbone-parse-es6</a></li>
+							<li><a href="https://github.com/typhonjs-demos/backbone-parse-es6-todos-improved/" target="_blank">backbone-parse-es6-todos-improved</a> / <a href="https://demos.typhonjs.io/typhonjs-demos/backbone-parse-es6-todos-improved/" target="_blank">demo</a> / <a href="https://docs.typhonjs.io/typhonjs-demos/backbone-parse-es6-todos-improved/" target="_blank">docs</a> - Provides an improved canonical TODOs demo for <a href="https://github.com/typhonjs-backbone-parse/backbone-parse-es6" target="_blank">backbone-parse-es6</a></li>
+							<br>
+							Electron / desktop versions of a couple of the web apps above:
+							<br>
+							<li><a href="https://github.com/typhonjs-demos/electron-backbone-es6-localstorage-todos" target="_blank">electron-backbone-es6-localstorage-todos</a> - Provides a desktop version of backbone-es6-localstorage-todos for <a href="https://github.com/typhonjs-backbone/backbone-es6" target="_blank">backbone-es6</a></li>
+							<li><a href="https://github.com/typhonjs-demos/electron-backbone-parse-es6-todos-improved" target="_blank">electron-backbone-parse-es6-todos-improved</a> - Provides a desktop version of backbone-parse-es6-todos-improved for <a href="https://github.com/typhonjs-backbone-parse/backbone-parse-es6" target="_blank">backbone-parse-es6</a></li>
+							<br>
+							The following demos show rhetorical ways to consume TyphonJS including global JS / RequireJS usage:
+							<br>
+							<li><a href="https://github.com/typhonjs-demos/backbone-es6-localstorage-todos-global-es5/" target="_blank">backbone-es6-localstorage-todos-global-es5</a> / <a href="https://demos.typhonjs.io/typhonjs-demos/backbone-es6-localstorage-todos-global-es5/" target="_blank">demo</a> - Provides the canonical TODOs demo for <a href="https://github.com/typhonjs-backbone/backbone-es6" target="_blank">backbone-es6</a> using <a href="https://github.com/typhonjs-backbone/typhonjs-core-backbone-localstorage" target="_blank">typhonjs-core-backbone-localstorage</a></li>
+							<li><a href="https://github.com/typhonjs-demos/backbone-es6-localstorage-todos-requirejs-es5/" target="_blank">backbone-es6-localstorage-todos-requirejs-es5</a> / <a href="https://demos.typhonjs.io/typhonjs-demos/backbone-es6-localstorage-todos-requirejs-es5/" target="_blank">demo</a> - Provides the canonical TODOs demo for <a href="https://github.com/typhonjs-backbone/backbone-es6" target="_blank">backbone-es6</a> using <a href="https://github.com/typhonjs-backbone/typhonjs-core-backbone-localstorage" target="_blank">typhonjs-core-backbone-localstorage</a></li>
+							<li><a href="https://github.com/typhonjs-demos/backbone-parse-es6-todos-global-es5/" target="_blank">backbone-parse-es6-todos-global-es5</a> / <a href="https://demos.typhonjs.io/typhonjs-demos/backbone-parse-es6-todos-global-es5/" target="_blank">demo</a> - Provides an improved canonical TODOs demo for <a href="https://github.com/typhonjs-backbone-parse/backbone-parse-es6" target="_blank">backbone-parse-es6</a> using Parse.</li> 
+   					</div>
+					</div>
+
+               <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet typhon-center">
+                  <div class="mdl-card__title mdl-card--border">
+                     TyphonJS organizations / repos
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                     Below is an overview of all of the TyphonJS organizations / repos hosted on Github as of April 20th 2016:
+                     <br><br>
+                     <ul id="orgs">
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs" target="_blank">typhonjs</a> - Provides common repos for TyphonJS
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs/typhonjs-overview" target="_blank">typhonjs-overview</a> - Provides an overview of TyphonJS.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-backbone" target="_blank">typhonjs-backbone</a>
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-backbone/backbone-es6" target="_blank">backbone-es6</a> - A fork of Backbone converting it to ES6.</li>
+                           <li><a href="https://github.com/typhonjs-backbone/typhonjs-core-backbone-common" target="_blank">typhonjs-core-backbone-common</a> - Provides the common TyphonJS extensions to Backbone-ES6</li>
+                           <li><a href="https://github.com/typhonjs-backbone/typhonjs-core-backbone-events" target="_blank">typhonjs-core-backbone-events</a> - Separates 'events' support from Backbone in addition to adding TyphonJS extensions.</li>
+                           <li><a href="https://github.com/typhonjs-backbone/typhonjs-core-backbone-events-logged" target="_blank">typhonjs-core-backbone-events-logged</a> - Provides a `typhonjs-core-logging` enabled version of `typhonjs-core-backbone-events`.</li>
+                           <li><a href="https://github.com/typhonjs-backbone/typhonjs-core-backbone-localstorage" target="_blank">typhonjs-core-backbone-localstorage</a> - Provides a sync adapter using browser localStorage for backbone-es6.</li>
+                           <li><a href="https://github.com/typhonjs-backbone/typhonjs-core-backbone-multistorage" target="_blank">typhonjs-core-backbone-multistorage</a> - Provides an adapter for backbone-es6 using typhonjs-core-multistorage.</li>
+                           <li><a href="https://github.com/typhonjs-backbone/typhonjs-core-backbone-query" target="_blank">typhonjs-core-backbone-query</a> - A lightweight query API for Backbone Collections</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-backbone-core" target="_blank">typhonjs-backbone-core</a> - Provides the core implementation of backbone-es6</li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-backbone-firebase" target="_blank">typhonjs-backbone-firebase</a> - Forthcoming typhonjs-backbone support for Firebase</li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-backbone-parse" target="_blank">typhonjs-backbone-parse</a> - Provides support for Parse for typhonjs-backbone
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-backbone-parse/backbone-parse-es6" target="_blank">backbone-parse-es6</a> - A fork of Backbone converting it to ES6 along with Parse 1.6+ integration and ES5 bundles.</li>
+                           <li><a href="https://github.com/typhonjs-backbone-parse/typhonjs-core-parse" target="_blank">typhonjs-core-parse</a></li>
+                           <li><a href="https://github.com/typhonjs-backbone-parse/typhonjs-core-parse-init" target="_blank">typhonjs-core-parse-init</a></li>
+                           <li><a href="https://github.com/typhonjs-backbone-parse/typhonjs-core-parse-user" target="_blank">typhonjs-core-parse-user</a></li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-browser" target="_blank">typhonjs-browser</a> - Provides browser specific utilities and modules.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-browser/zepto" target="_blank">zepto</a> - Zepto.js is a minimalist JavaScript library for modern browsers, with a jQuery-compatible API and mods for consumption in JSPM</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-common" target="_blank">typhonjs-common</a> - Provides common isometric modules / components that run on the server & client.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-common/typhonjs-core-collections" target="_blank">typhonjs-core-collections</a> - Provides several collection oriented data structures. </li>
+                           <li><a href="https://github.com/typhonjs-common/typhonjs-core-logging" target="_blank">typhonjs-core-logging</a> - Provides a pluggable logging module for universal logging across TyphonJS repos. </li>
+                           <li><a href="https://github.com/typhonjs-common/typhonjs-core-logging-socket" target="_blank">typhonjs-core-logging-socket</a> - Provides a logging plugin for typhonjs-core-logging that sends data over a WebSocket or SockJS.</li>
+                           <li><a href="https://github.com/typhonjs-common/typhonjs-core-multistorage" target="_blank">typhonjs-core-multistorage</a> - Provides basic platform independent storage.</li>
+                           <li><a href="https://github.com/typhonjs-common/typhonjs-core-socket" target="_blank">typhonjs-core-socket</a> - Provides a default socket implementation supporting WebSockets and sock.js</li>
+                           <li><a href="https://github.com/typhonjs-common/typhonjs-core-utils" target="_blank">typhonjs-core-utils</a> - Provides common utility functionality.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-demos" target="_blank">typhonjs-demos</a> - Provides demos for all TyphonJS repos.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-demos/backbone-es6-localstorage-todos" target="_blank">backbone-es6-localstorage-todos</a> - Provides the canonical TODOs demo for backbone-es6 and typhonjs-core-backbone-localstorage w/ JSPM & SystemJS.</li>
+                           <li><a href="https://github.com/typhonjs-demos/backbone-es6-localstorage-todos-global-es5" target="_blank">backbone-es6-localstorage-todos-global-es5</a> - Provides the canonical TODOs demo for backbone-es6 using the ES5 global bundle (backbone.js)</li>
+                           <li><a href="https://github.com/typhonjs-demos/backbone-es6-localstorage-todos-requirejs-es5" target="_blank">backbone-es6-localstorage-todos-requirejs-es5</a> - Provides the canonical TODOS web app using RequireJS and the AMD ES5 bundle generated by backbone-es6 and typhonjs-core-backbone-localstorage.</li>
+                           <li><a href="https://github.com/typhonjs-demos/backbone-parse-es6-todos" target="_blank">backbone-parse-es6-todos</a> - Provides the canonical TODOs demo for backbone-parse-es6 and JSPM / SystemJS.</li>
+                           <li><a href="https://github.com/typhonjs-demos/backbone-parse-es6-todos-global-es5" target="_blank">backbone-parse-es6-todos-global-es5</a> - Provides the canonical TODOs demo for backbone-parse-es6 using the ES5 global bundle (backbone-parse.js)</li>
+                           <li><a href="https://github.com/typhonjs-demos/backbone-parse-es6-todos-improved" target="_blank">backbone-parse-es6-todos-improved</a> - Provides the canonical TODOs app for backbone-parse-es6 showing improved with TyphonJS functionality.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-demos-deploy-electron" target="_blank">typhonjs-demos-deploy-electron</a> - Creates desktop apps using Electron from typhonjs-demos
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-demos-deploy-electron/electron-backbone-es6-localstorage-todos" target="_blank">electron-backbone-es6-localstorage-todos</a> - Creates a desktop app  from backbone-es6-localstorage-todos using Electron.</li>
+                           <li><a href="https://github.com/typhonjs-demos-deploy-electron/electron-backbone-parse-es6-todos-improved" target="_blank">electron-backbone-parse-es6-todos-improved</a> - Creates a desktop app from backbone-parse-es6-todos-improved using Electron.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-demos-test" target="_blank">typhonjs-demos-test</a> - Provides testing repos specific to issues related to TyphonJS.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-demos-test/istanbul-jspm-coverage-example" target="_blank">istanbul-jspm-coverage-example</a> - Provides an example of instrumenting JSPM / SystemJS for code coverage with Istanbul / Mocha.</li>
+                           <li><a href="https://github.com/typhonjs-demos-test/typhonjs-issues-demos" target="_blank">typhonjs-issues-demos</a> - Provides various demos for issues raised with all TyphonJS repos.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-docs" target="_blank">typhonjs-docs</a> - Provides all versioned docs, specs, and governance repos.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-docs/typhonjs-core-docs" target="_blank">typhonjs-core-docs</a> - Provides overview documentation for all TyphonJS orgs / repos.</li>
+                           <li><a href="https://github.com/typhonjs-docs/typhonjs-core-governance" target="_blank">typhonjs-core-governance</a> - Provides the authoritative documentation regarding TyphonJS governance.</li>
+                           <li><a href="https://github.com/typhonjs-docs/typhonjs-core-specifications" target="_blank">typhonjs-core-specifications</a> - Provides overview documentation for all TyphonJS orgs / repos.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-meteor-ddp-client" target="_blank">typhonjs-meteor-ddp-client</a> - Provides a generic client for DDP (Distributed Data Protocol) and plugin mechanism to link to MVC libraries.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-meteor-ddp-client/backbone-meteor-es6" target="_blank">backbone-meteor-es6</a></li>
+                           <li><a href="https://github.com/typhonjs-meteor-ddp-client/typhonjs-core-asteroid" target="_blank">typhonjs-core-asteroid</a> - An ES6 fork of Asteroid providing a generic client for Meteor. </li>
+                           <li><a href="https://github.com/typhonjs-meteor-ddp-client/typhonjs-core-asteroid-belt" target="_blank">typhonjs-core-asteroid-belt</a> - Wouldn't you like to know.... coming soon... :D</li>
+                           <li><a href="https://github.com/typhonjs-meteor-ddp-client/typhonjs-core-asteroid-init" target="_blank">typhonjs-core-asteroid-init</a></li>
+                           <li><a href="https://github.com/typhonjs-meteor-ddp-client/typhonjs-core-socket-ddp" target="_blank">typhonjs-core-socket-ddp</a> - Provides a Javascript DDP client</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-node-config" target="_blank">typhonjs-node-config</a> - Provides utility NPM modules for configuration data.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-node-config/typhonjs-config-eslint" target="_blank">typhonjs-config-eslint</a> - Provides shared ESLint configs for TyphonJS repos.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-node-esdoc" target="_blank">typhonjs-node-esdoc</a> - Provides NPM modules for ESDoc plugins.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-dependency-graphs" target="_blank">esdoc-plugin-dependency-graphs</a> - A plugin for ESDoc that adds interactive D3 powered dependency graphs for source code including linking JSPM / NPM managed code and packages.</li>
+                           <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-enhanced-navigation" target="_blank">esdoc-plugin-enhanced-navigation</a> - Replaces the standard ESDoc left hand source navigation with an enhanced version. </li>
+                           <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-extends-replace" target="_blank">esdoc-plugin-extends-replace</a> - An ESDoc plugin to replace unconnected "extends" tags w/ actual class references.</li>
+                           <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-jspm" target="_blank">esdoc-plugin-jspm</a> - A plugin for ESDoc that enables end to end documentation linking JSPM / SystemJS managed packages in addition to a source root. </li>
+                           <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-npm" target="_blank">esdoc-plugin-npm</a> - A plugin for ESDoc that enables end to end documentation linking NPM managed packages in addition to a source root.</li>
+                           <li><a href="https://github.com/typhonjs-node-esdoc/typhonjs-node-esdoc" target="_blank">typhonjs-node-esdoc</a> - Provides a NPM module combining ESDoc with all plugins available.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-node-gulp" target="_blank">typhonjs-node-gulp</a> - Provides NPM modules for various Gulp tasks.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-node-gulp/typhonjs-core-gulptasks" target="_blank">typhonjs-core-gulptasks</a> - Provides common gulp tasks shared by TyphonJS and beyond for JSPM / SystemJS projects.</li>
+                           <li><a href="https://github.com/typhonjs-node-gulp/typhonjs-github-orgs-gulptasks" target="_blank">typhonjs-github-orgs-gulptasks</a> - Provides GitHub many organization / repos gulp tasks shared by TyphonJS and beyond.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-node-jspm" target="_blank">typhonjs-node-jspm</a> - Provides utility NPM modules for interfacing with JSPM / SystemJS.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-node-jspm/typhonjs-config-jspm-parse" target="_blank">typhonjs-config-jspm-parse</a> - Provides a NPM module to parse dependencies from JSPM entries in `package.json` and `config.js` via an instance of SystemJS / SystemJS Loader.</li>
+                           <li><a href="https://github.com/typhonjs-node-jspm/typhonjs-istanbul-instrument-jspm" target="_blank">typhonjs-istanbul-instrument-jspm</a> - Provides a NPM module to add Istanbul instrumentation to JSPM / SystemJS by replacing the System.translate hook. </li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-node-npm-scripts" target="_blank">typhonjs-node-npm-scripts</a> - Provides various NPM modules / scripts including build / testing modules.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-build-test" target="_blank">typhonjs-npm-build-test</a> - Provides a unified set of NPM scripts and dependencies for building and testing ES6+ NPM modules for TyphonJS and beyond.</li>
+                           <li><a href="https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-scripts-build-babel" target="_blank">typhonjs-npm-scripts-build-babel</a> - Provides NPM scripts for building ES6+ projects using Babel for all TyphonJS NPM modules and beyond.</li>
+                           <li><a href="https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish" target="_blank">typhonjs-npm-scripts-publish</a> - Provides NPM scripts for pre-publish & publish actions for TyphonJS NPM modules and beyond.</li>
+                           <li><a href="https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-scripts-test-mocha" target="_blank">typhonjs-npm-scripts-test-mocha</a> - Provides NPM scripts for testing projects using Istanbul & Mocha for all TyphonJS NPM modules and beyond.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-node-scm" target="_blank">typhonjs-node-scm</a> - Provides utility NPM modules for interfacing with source code management systems.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs" target="_blank">typhonjs-github-inspect-orgs</a> - A NPM module providing compound GitHub queries spanning multiple organizations / users for many-repo projects such as TyphonJS.</li>
+                           <li><a href="https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform" target="_blank">typhonjs-github-inspect-orgs-transform</a> - Provides a NPM module that transforms data from typhonjs-github-inspect-orgs to normalized HTML, markdown, JSON or text.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-react" target="_blank">typhonjs-react</a> - So this is your sandbox React. Bring your best and let's see what you got. </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-react-native" target="_blank">typhonjs-react-native</a> - Forthcoming support for React Native (IE meteor / DDP support).</li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-socketstream-client" target="_blank">typhonjs-socketstream-client</a> - Provides a generic client for SocketStream and plugin mechanism to link to MVC libraries.</li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-utils" target="_blank">typhonjs-utils</a> - Provides miscellaneous utility repos.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-utils/intellij-plugin-jspm" target="_blank">intellij-plugin-jspm</a> - Provides JSPM reference and path completion plugin for WebStorm, PHPStorm and other Idea family IDE supporting Javascript.</li>
+                        </ul>
+                        </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-zenhub" target="_blank">typhonjs-zenhub</a> - Provides a common location for all ZenHub projects tracking all repos from each major TyphonJS org category.
+                        <ul id="repos">
+                           <li><a href="https://github.com/typhonjs-zenhub/zenhub-typhonjs" target="_blank">zenhub-typhonjs</a> - Provides a ZenHub overview of all TyphonJS orgs / repos.</li>
+                        </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet typhon-center">
+                  <div class="mdl-card__title mdl-card--border">
+                     <a href="https://www.npmjs.com/~typhonrt" target="_blank">TyphonJS NPM packages</a>
+                  </div>
+               </div>
+
+
+               <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet typhon-center">
+                  <div class="mdl-card__supporting-text">
+                     Copyright TyphonRT Inc. 2015-present
+                  </div>
+               </div>
+
+            </div>
+         </div>
+            
+         </div>
+      </main>
+   </div>
+
+</body>
+</html>
