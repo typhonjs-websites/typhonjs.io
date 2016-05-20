@@ -112,6 +112,7 @@
                   <div class="mdl-card__supporting-text">
 							The following tasks are next up for completion:
 							<br>
+                     <li><a href="https://github.com/typhonjs-node-escomplex/escomplex" target="_blank">escomplex</a>: a major rewrite of escomplex is almost complete for ES6 support and an ESDoc plugin w/ D3 interactive graphs for complexity reports.</li>
 							<li><a href="https://github.com/typhonjs-node-esdoc" target="_blank">typhonjs-node-esdoc</a>: finish all ESDoc plugins including D3 interactive graphs of JSPM / NPM managed source & package (<a href="https://docs.typhonjs.io/typhonjs-demos/backbone-parse-es6-todos-improved/graphs/jspm_packages.html" target="_blank">JSPM package demo</a>).</li>
 							<li><a href="https://github.com/typhonjs-node-esdoc" target="_blank">typhonjs-node-esdoc</a>: complete multi-org / repo automatic ESDoc documentation generation via Travis CI.</li>
                      <li><a href="https://github.com/typhonjs-backbone/backbone-es6" target="_blank">backbone-es6</a>: completely modularize backbone-es6 into separate repos.</li>
@@ -147,7 +148,7 @@
                      TyphonJS organizations / repos
                   </div>
                   <div class="mdl-card__supporting-text">
-                     Below is an overview of all of the TyphonJS organizations / repos hosted on Github as of May 12th 2016:
+                     Below is an overview of all of the TyphonJS organizations / repos hosted on Github as of May 19th 2016:
                      <br>
                      <ul id="orgs">
                         <li class="li-depth-0"><a href="https://github.com/typhonjs" target="_blank">typhonjs</a> - Provides common repos for TyphonJS
@@ -234,10 +235,17 @@
                               <li><a href="https://github.com/typhonjs-node-config/typhonjs-config-eslint" target="_blank">typhonjs-config-eslint</a> - Provides shared ESLint configs for TyphonJS repos.</li>
                            </ul>
                         </li>
+                        <li class="li-depth-0"><a href="https://github.com/typhonjs-node-escomplex" target="_blank">typhonjs-node-escomplex</a> - Currently a test refactor of escomplex
+                           <ul id="repos">
+                              <li><a href="https://github.com/typhonjs-node-escomplex/escomplex" target="_blank">escomplex</a> - Provides AST generation feeding escomplex-core</li>
+                              <li><a href="https://github.com/typhonjs-node-escomplex/escomplex-core" target="_blank">escomplex-core</a> - Provides the AST processing for complexity reports.</li>
+                           </ul>
+                        </li>
                         <li class="li-depth-0"><a href="https://github.com/typhonjs-node-esdoc" target="_blank">typhonjs-node-esdoc</a> - Provides NPM modules for ESDoc plugins.
                            <ul id="repos">
                               <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-dependency-graphs" target="_blank">esdoc-plugin-dependency-graphs</a> - A plugin for ESDoc that adds interactive D3 powered dependency graphs for source code including linking JSPM / NPM managed code and packages.</li>
                               <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-enhanced-navigation" target="_blank">esdoc-plugin-enhanced-navigation</a> - Replaces the standard ESDoc left hand source navigation with an enhanced version. </li>
+                              <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-escomplex" target="_blank">esdoc-plugin-escomplex</a> - A plugin for ESDoc that produces complexity analysis reports via escomplex.</li>
                               <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-extends-replace" target="_blank">esdoc-plugin-extends-replace</a> - An ESDoc plugin to replace unconnected "extends" tags w/ actual class references.</li>
                               <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-jspm" target="_blank">esdoc-plugin-jspm</a> - A plugin for ESDoc that enables end to end documentation linking JSPM / SystemJS managed packages in addition to a source root. </li>
                               <li><a href="https://github.com/typhonjs-node-esdoc/esdoc-plugin-npm" target="_blank">esdoc-plugin-npm</a> - A plugin for ESDoc that enables end to end documentation linking NPM managed packages in addition to a source root.</li>
