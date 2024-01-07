@@ -1,0 +1,79 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="TyphonJS -- A platform for web and mobile app development.">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <title>TyphonJS &#8482;</title>
+
+
+    <!-- Defines a CSP which makes the app more secure; to even be more secure adding a hash or nonce for
+    `script-src` is recommended -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src https://newassets.hcaptcha.com/; script-src 'self' 'unsafe-inline' https://js.hcaptcha.com/ https://cdn.jsdelivr.net/npm/vanilla-hcaptcha; connect-src 'self'; img-src 'self' data:; style-src 'self';">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="../site/images/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="../site/images/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../site/images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../site/images/icons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="../site/images/icons/favicon-96x96.png" sizes="96x96">
+
+    <link rel="stylesheet" href="../site/css/styles.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../site/css/landing.css" type="text/css" media="screen" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha"></script>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', () =>
+       {
+          const signupCaptcha = document.getElementById('signupCaptcha');
+          signupCaptcha.addEventListener('verified', () => window.location = atob('aHR0cHM6Ly9kaXNjb3JkLmdnL2pCcjZVRDJ5MlE='));
+       });
+    </script>
+
+    <style>
+        article {
+            border-radius: 1em;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            margin: auto;
+            max-width: 800px;
+            min-width: 300px;
+        }
+
+        main {
+            padding-top: 20px;
+        }
+
+        .title {
+          display: flex;
+          align-items: center;
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <div class=title><img src="../site/images/icons/android-chrome-36x36.png">&nbsp;TyphonJS Discord Onboarding</div>
+            <p>
+                Welcome to the onboarding process to join the TyphonJS Discord server. Support for all of our
+                <a href="https://foundryvtt.com/" target="_blank">Foundry VTT</a> packages and developer support /
+                discussion for all of our NPM packages awaits. To join the Discord server please answer the
+                captcha below. On a successful verification <a href="https://discord.com/" target="_blank">Discord</a> will
+                be opened where you will be welcomed shortly in the #welcome channel.
+            </p>
+            <h-captcha id="signupCaptcha"
+                       site-key="8ea85648-3f12-4e0c-bfe1-0db91cf59852"
+                       size="normal"
+                       reCaptchaCompat="false"
+                       tabindex="0"></h-captcha>
+        </article>
+    </main>
+</body>
+</html>
